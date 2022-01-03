@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C5B05322783AF2500F08C14 /* Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5B05312783AF2500F08C14 /* Culture.swift */; };
 		9C66363F278379EE005B3B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66363E278379EE005B3B0C /* AppDelegate.swift */; };
 		9C663641278379EE005B3B0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C663640278379EE005B3B0C /* ViewController.swift */; };
 		9C663643278379EE005B3B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C663642278379EE005B3B0C /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		9C663651278379EF005B3B0C /* metal_moldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C663650278379EF005B3B0C /* metal_moldTests.swift */; };
 		9C66365B278379EF005B3B0C /* metal_moldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66365A278379EF005B3B0C /* metal_moldUITests.swift */; };
 		9C66365D278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66365C278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift */; };
+		9C66366A27837AA9005B3B0C /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66366927837AA9005B3B0C /* Renderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C5B05312783AF2500F08C14 /* Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culture.swift; sourceTree = "<group>"; };
 		9C66363B278379EE005B3B0C /* metal-mold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metal-mold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C66363E278379EE005B3B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C663640278379EE005B3B0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		9C663656278379EF005B3B0C /* metal-moldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-moldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C66365A278379EF005B3B0C /* metal_moldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_moldUITests.swift; sourceTree = "<group>"; };
 		9C66365C278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_moldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9C66366927837AA9005B3B0C /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				9C663642278379EE005B3B0C /* Assets.xcassets */,
 				9C663644278379EE005B3B0C /* Main.storyboard */,
 				9C663647278379EE005B3B0C /* metal_mold.entitlements */,
+				9C66366927837AA9005B3B0C /* Renderer.swift */,
+				9C5B05312783AF2500F08C14 /* Culture.swift */,
 			);
 			path = "metal-mold";
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5B05322783AF2500F08C14 /* Culture.swift in Sources */,
 				9C663641278379EE005B3B0C /* ViewController.swift in Sources */,
+				9C66366A27837AA9005B3B0C /* Renderer.swift in Sources */,
 				9C66363F278379EE005B3B0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
