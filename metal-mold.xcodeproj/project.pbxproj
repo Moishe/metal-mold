@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C66363F278379EE005B3B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66363E278379EE005B3B0C /* AppDelegate.swift */; };
+		9C663641278379EE005B3B0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C663640278379EE005B3B0C /* ViewController.swift */; };
+		9C663643278379EE005B3B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C663642278379EE005B3B0C /* Assets.xcassets */; };
+		9C663646278379EE005B3B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C663644278379EE005B3B0C /* Main.storyboard */; };
+		9C663651278379EF005B3B0C /* metal_moldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C663650278379EF005B3B0C /* metal_moldTests.swift */; };
+		9C66365B278379EF005B3B0C /* metal_moldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66365A278379EF005B3B0C /* metal_moldUITests.swift */; };
+		9C66365D278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66365C278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C66364D278379EF005B3B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C663633278379EE005B3B0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C66363A278379EE005B3B0C;
+			remoteInfo = "metal-mold";
+		};
+		9C663657278379EF005B3B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C663633278379EE005B3B0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C66363A278379EE005B3B0C;
+			remoteInfo = "metal-mold";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C66363B278379EE005B3B0C /* metal-mold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metal-mold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C66363E278379EE005B3B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C663640278379EE005B3B0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C663642278379EE005B3B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C663645278379EE005B3B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C663647278379EE005B3B0C /* metal_mold.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metal_mold.entitlements; sourceTree = "<group>"; };
+		9C66364C278379EF005B3B0C /* metal-moldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-moldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C663650278379EF005B3B0C /* metal_moldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_moldTests.swift; sourceTree = "<group>"; };
+		9C663656278379EF005B3B0C /* metal-moldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-moldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C66365A278379EF005B3B0C /* metal_moldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_moldUITests.swift; sourceTree = "<group>"; };
+		9C66365C278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metal_moldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C663638278379EE005B3B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C663649278379EF005B3B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C663653278379EF005B3B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C663632278379EE005B3B0C = {
+			isa = PBXGroup;
+			children = (
+				9C66363D278379EE005B3B0C /* metal-mold */,
+				9C66364F278379EF005B3B0C /* metal-moldTests */,
+				9C663659278379EF005B3B0C /* metal-moldUITests */,
+				9C66363C278379EE005B3B0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C66363C278379EE005B3B0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C66363B278379EE005B3B0C /* metal-mold.app */,
+				9C66364C278379EF005B3B0C /* metal-moldTests.xctest */,
+				9C663656278379EF005B3B0C /* metal-moldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C66363D278379EE005B3B0C /* metal-mold */ = {
+			isa = PBXGroup;
+			children = (
+				9C66363E278379EE005B3B0C /* AppDelegate.swift */,
+				9C663640278379EE005B3B0C /* ViewController.swift */,
+				9C663642278379EE005B3B0C /* Assets.xcassets */,
+				9C663644278379EE005B3B0C /* Main.storyboard */,
+				9C663647278379EE005B3B0C /* metal_mold.entitlements */,
+			);
+			path = "metal-mold";
+			sourceTree = "<group>";
+		};
+		9C66364F278379EF005B3B0C /* metal-moldTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C663650278379EF005B3B0C /* metal_moldTests.swift */,
+			);
+			path = "metal-moldTests";
+			sourceTree = "<group>";
+		};
+		9C663659278379EF005B3B0C /* metal-moldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C66365A278379EF005B3B0C /* metal_moldUITests.swift */,
+				9C66365C278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift */,
+			);
+			path = "metal-moldUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C66363A278379EE005B3B0C /* metal-mold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C663660278379EF005B3B0C /* Build configuration list for PBXNativeTarget "metal-mold" */;
+			buildPhases = (
+				9C663637278379EE005B3B0C /* Sources */,
+				9C663638278379EE005B3B0C /* Frameworks */,
+				9C663639278379EE005B3B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "metal-mold";
+			productName = "metal-mold";
+			productReference = 9C66363B278379EE005B3B0C /* metal-mold.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C66364B278379EF005B3B0C /* metal-moldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C663663278379EF005B3B0C /* Build configuration list for PBXNativeTarget "metal-moldTests" */;
+			buildPhases = (
+				9C663648278379EF005B3B0C /* Sources */,
+				9C663649278379EF005B3B0C /* Frameworks */,
+				9C66364A278379EF005B3B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C66364E278379EF005B3B0C /* PBXTargetDependency */,
+			);
+			name = "metal-moldTests";
+			productName = "metal-moldTests";
+			productReference = 9C66364C278379EF005B3B0C /* metal-moldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C663655278379EF005B3B0C /* metal-moldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C663666278379EF005B3B0C /* Build configuration list for PBXNativeTarget "metal-moldUITests" */;
+			buildPhases = (
+				9C663652278379EF005B3B0C /* Sources */,
+				9C663653278379EF005B3B0C /* Frameworks */,
+				9C663654278379EF005B3B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C663658278379EF005B3B0C /* PBXTargetDependency */,
+			);
+			name = "metal-moldUITests";
+			productName = "metal-moldUITests";
+			productReference = 9C663656278379EF005B3B0C /* metal-moldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C663633278379EE005B3B0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9C66363A278379EE005B3B0C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9C66364B278379EF005B3B0C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9C66363A278379EE005B3B0C;
+					};
+					9C663655278379EF005B3B0C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9C66363A278379EE005B3B0C;
+					};
+				};
+			};
+			buildConfigurationList = 9C663636278379EE005B3B0C /* Build configuration list for PBXProject "metal-mold" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C663632278379EE005B3B0C;
+			productRefGroup = 9C66363C278379EE005B3B0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C66363A278379EE005B3B0C /* metal-mold */,
+				9C66364B278379EF005B3B0C /* metal-moldTests */,
+				9C663655278379EF005B3B0C /* metal-moldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C663639278379EE005B3B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C663643278379EE005B3B0C /* Assets.xcassets in Resources */,
+				9C663646278379EE005B3B0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C66364A278379EF005B3B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C663654278379EF005B3B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C663637278379EE005B3B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C663641278379EE005B3B0C /* ViewController.swift in Sources */,
+				9C66363F278379EE005B3B0C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C663648278379EF005B3B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C663651278379EF005B3B0C /* metal_moldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C663652278379EF005B3B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C66365D278379EF005B3B0C /* metal_moldUITestsLaunchTests.swift in Sources */,
+				9C66365B278379EF005B3B0C /* metal_moldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C66364E278379EF005B3B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C66363A278379EE005B3B0C /* metal-mold */;
+			targetProxy = 9C66364D278379EF005B3B0C /* PBXContainerItemProxy */;
+		};
+		9C663658278379EF005B3B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C66363A278379EE005B3B0C /* metal-mold */;
+			targetProxy = 9C663657278379EF005B3B0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C663644278379EE005B3B0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C663645278379EE005B3B0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C66365E278379EF005B3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C66365F278379EF005B3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9C663661278379EF005B3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "metal-mold/metal_mold.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2ZAFFLGUM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moishelettvin.metal-mold";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9C663662278379EF005B3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "metal-mold/metal_mold.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2ZAFFLGUM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moishelettvin.metal-mold";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9C663664278379EF005B3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2ZAFFLGUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moishelettvin.metal-moldTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metal-mold.app/Contents/MacOS/metal-mold";
+			};
+			name = Debug;
+		};
+		9C663665278379EF005B3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2ZAFFLGUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moishelettvin.metal-moldTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metal-mold.app/Contents/MacOS/metal-mold";
+			};
+			name = Release;
+		};
+		9C663667278379EF005B3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2ZAFFLGUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moishelettvin.metal-moldUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "metal-mold";
+			};
+			name = Debug;
+		};
+		9C663668278379EF005B3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F2ZAFFLGUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moishelettvin.metal-moldUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "metal-mold";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C663636278379EE005B3B0C /* Build configuration list for PBXProject "metal-mold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C66365E278379EF005B3B0C /* Debug */,
+				9C66365F278379EF005B3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C663660278379EF005B3B0C /* Build configuration list for PBXNativeTarget "metal-mold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C663661278379EF005B3B0C /* Debug */,
+				9C663662278379EF005B3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C663663278379EF005B3B0C /* Build configuration list for PBXNativeTarget "metal-moldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C663664278379EF005B3B0C /* Debug */,
+				9C663665278379EF005B3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C663666278379EF005B3B0C /* Build configuration list for PBXNativeTarget "metal-moldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C663667278379EF005B3B0C /* Debug */,
+				9C663668278379EF005B3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C663633278379EE005B3B0C /* Project object */;
+}
