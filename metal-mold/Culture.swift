@@ -23,8 +23,8 @@ struct ActorDescriptor {
   var directionRange: ClosedRange<Float> = 0...0
   var speed: Float = 0
   var speedRange: ClosedRange<Float> = 0...0
-  var life: Float = 0
-  var lifeRange: ClosedRange<Float> = 1...1
+  var life: Int = 0
+  var lifeRange: ClosedRange<Int> = 1...1
   var goalColor: float4 = [0, 0, 0, 1]
 }
 
