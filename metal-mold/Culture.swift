@@ -8,17 +8,11 @@
 import MetalKit
 
 struct Actor {
-  var startPosition: float2
   var position: float2
   var direction: Float
   var speed: Float
-  var color: float4
-  var age: Float
-  var life: Float
-  var size: Float
-  var scale: Float = 1.0
-  var startScale: Float = 1.0
-  var endScale: Float = 1.0
+  var goalColor: float4
+  var remainingLife: Int
 }
 
 struct ActorDescriptor {
@@ -29,24 +23,18 @@ struct ActorDescriptor {
   var directionRange: ClosedRange<Float> = 0...0
   var speed: Float = 0
   var speedRange: ClosedRange<Float> = 0...0
-  var pointSize: Float = 80
-  var pointSizeRange: ClosedRange<Float> = 0...0
-  var startScale: Float = 0
-  var startScaleRange: ClosedRange<Float> = 1...1
-  var endScale: Float = 0
-  var endScaleRange: ClosedRange<Float>?
   var life: Float = 0
   var lifeRange: ClosedRange<Float> = 1...1
-  var color: float4 = [0, 0, 0, 1]
+  var goalColor: float4 = [0, 0, 0, 1]
 }
 
 class Emitter {
   var position: float2 = [0, 0]
-  var currentParticles = 0
-  var particleCount: Int = 0 {
+  var currentActors = 0
+  var actorCount: Int = 0 {
     didSet {
-      let bufferSize = MemoryLayout<Particle>.stride * particleCount
-      particleBuffer = Renderer.device.makeBuffer(length: bufferSize)!
+      let bufferSize = MemoryLayout<Actor>.stride * actorCount
+      actorBuffer = Renderer.device.makeBuffer(length: bufferSize)!
     }
   }
   var birthRate = 0
@@ -57,17 +45,17 @@ class Emitter {
   }
   private var birthTimer = 0
   
-  var particleTexture: MTLTexture!
-  var particleBuffer: MTLBuffer?
+  var actorTexture: MTLTexture!
+  var actorBuffer: MTLBuffer?
   
-  var particleDescriptor: ParticleDescriptor?
+  var actorDescriptor: ActorDescriptor?
   
   func emit() {
-    if currentParticles >= particleCount {
+    if currentActors >= actorCount {
       return
     }
-    guard let particleBuffer = particleBuffer,
-          let pd = particleDescriptor else {
+    guard let actorBuffer = actorBuffer,
+          let ad = actorDescriptor else {
             return
           }
     birthTimer += 1
@@ -75,31 +63,19 @@ class Emitter {
       return
     }
     birthTimer = 0
-    var pointer = particleBuffer.contents().bindMemory(to: Particle.self,
-                                                       capacity: particleCount)
-    pointer = pointer.advanced(by: currentParticles)
+    var pointer = actorBuffer.contents().bindMemory(to: Actor.self,
+                                                       capacity: actorCount)
+    pointer = pointer.advanced(by: currentActors)
     for _ in 0..<birthRate {
-      let positionX = pd.position.x + .random(in: pd.positionXRange)
-      let positionY = pd.position.y + .random(in: pd.positionYRange)
+      let positionX = ad.position.x + .random(in: ad.positionXRange)
+      let positionY = ad.position.y + .random(in: ad.positionYRange)
       pointer.pointee.position = [positionX, positionY]
-      pointer.pointee.startPosition = pointer.pointee.position
-      pointer.pointee.size = pd.pointSize + .random(in: pd.pointSizeRange)
-      pointer.pointee.direction = pd.direction + .random(in: pd.directionRange)
-      pointer.pointee.speed = pd.speed + .random(in: pd.speedRange)
-      pointer.pointee.scale = pd.startScale + .random(in: pd.startScaleRange)
-      pointer.pointee.startScale = pointer.pointee.scale
-      if let range = pd.endScaleRange {
-        pointer.pointee.endScale = pd.endScale + .random(in: range)
-      } else {
-        pointer.pointee.endScale = pointer.pointee.startScale
-      }
-      
-      pointer.pointee.age = 0
-      pointer.pointee.life = pd.life + .random(in: pd.lifeRange)
-      pointer.pointee.color = pd.color
+      pointer.pointee.direction = ad.direction + .random(in: ad.directionRange)
+      pointer.pointee.speed = ad.speed + .random(in: ad.speedRange)
+      pointer.pointee.remainingLife = ad.life + .random(in: ad.lifeRange)
       pointer = pointer.advanced(by: 1)
     }
-    currentParticles += birthRate
+    currentActors += birthRate
   }
   
   static func loadTexture(imageName: String) -> MTLTexture? {
